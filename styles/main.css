@@ -1,0 +1,161 @@
+:root {
+    --yellow: #ffdc21;
+    --white: #fff;
+    --black: #000;
+    --grey: #535353;
+    --lilac: #213272;
+    --dark-blue: #152040;
+    --dark-grey: #080808;
+}
+
+@font-face {
+
+
+
+    font-family: poppins-semibold;
+    src: url("../fonts/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: poppins-extralight;
+    src: url("../fonts/Poppins-ExtraLight.ttf");
+}
+
+p,
+button {
+    font-family: poppins-extralight;
+    font-size: 15px;
+    color: var(--dark-grey);
+    line-height: 1.5;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--white);
+
+}
+
+h1,
+h2,
+h3 {
+    font-family: poppins-semibold;
+}
+
+h1 {
+    font-size: 36px;
+    color: var(--yellow);
+}
+
+h2 {
+    color: var(--yellow);
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 22px;
+
+}
+
+.m-tanks {
+    fill: var(--yellow);
+}
+
+.cover-img {
+    background-image: url("https://static.wixstatic.com/media/fc7570_416a56430a9e4e2abd030cd2656120ef~mv2_d_6506_3420_s_4_2.jpg/v1/fill/w_320,h_589,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/fc7570_416a56430a9e4e2abd030cd2656120ef~mv2_d_6506_3420_s_4_2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    background-color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 30px;
+    width: 129px;
+    height: 45px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plunge-into {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    align-items: left;
+}
+
+.about-us {
+    background: var(--lilac);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: 0;
+}
+
+.about-us p {
+    font-size: 18px;
+    color: var(--white);
+    text-align: center;
+    line-height: 1.5;
+
+}
+
+.course-content {
+    background: var(--dark-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    /* padding-left: 20px; */
+    padding-bottom: 40px;
+    margin: 0;
+}
+
+.course-desc {
+    padding-left: 20px;
+    font-size: 18px;
+    color: var(--white);
+    text-align: left;
+    line-height: 1.5;
+
+}
+
+.course-content p {
+    font-size: 18px;
+    color: var(--white);
+    text-align: left;
+    line-height: 1.5;
+
+}
+
+img {
+    width: 100%;
+    margin: 0;
+}
+
+.feedback-carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: 0;
+}
