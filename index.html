@@ -4,33 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Scuba Dive Center</title>
   </head>
 
   <body>
     <header>
       <div class="cover-img">
-        <nav>
-          <ul>
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="./about.html">About Us</a>
-            </li>
-            <li>
-              <a href="#">Courses</a>
-            </li>
-            <li>
-              <a href="#">Contact Us</a>
-            </li>
-          </ul>
-        </nav>
-
-        <div class="burgerbar">
-            <div class="burger"></div>
-            <div class="burger"></div>
-            <div class="burger"></div>
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+          <a href="#home" class="active"></a>
+          <!-- Navigation links (hidden by default) -->
+          <div class="myLinks">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#dive_sites">Dive Sites</a>
+            <a href="#services">Services</a>
+            <a href="#faq">FAQ</a>
+            <!-- facebook logo -->
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+            <!-- twitter logo -->
+            <a href="https://twitter.com/" class="fa fa-twitter"></a>
+            <!-- instagram logo -->
+            <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+          </div>
+          <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
         </div>
 
         <div class="logo">
@@ -155,39 +159,54 @@
         aria-hidden="false"
         tabindex="0"
       ></iframe>
+    </div>
 
     <!-- contact -->
     <section class="contact">
-      <h2>Contact Us</h2>
-
       <div class="contact-content">
         <div class="contact-info">
-          <h3>Address</h3>
+          <h4>Contact Us</h4>
           <p>500 Terry Francois Street</p>
           <p>San Francisco, CA 94158</p>
           <p>Tel: 123-456-7890</p>
           <p>Fax: 123-456-7890</p>
           <p>
             Email:
-            <a href='' class="email">
-
-            </a>
-            </p>
+            <a href="" class="email"> </a>
+          </p>
         </div>
 
-        <div class="contact-form">
-          <form action="">
-            <input type="text" placeholder="Name" />
-            <input type="email" placeholder="Email" />
-            <input type="text" placeholder="Subject" />
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-            <button class="btn">Submit</button>
+        <div class="contact-form" id="contact2">
+          <form action="your_server_endpoint" method="POST" id="myForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="phone">Phone:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              placeholder="123-456-7890"
+            />
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" class="form-btn">Submit</button>
           </form>
         </div>
+      </div>
+    </section>
 
-
-
-
-    <footer></footer>
+    <footer>
+      <p>
+        © 2035 by Moray Dive School. Powered and secured by
+        <a href="https://www.wix.com/">Wix.com</a>
+      </p>
+    </footer>
   </body>
 </html>

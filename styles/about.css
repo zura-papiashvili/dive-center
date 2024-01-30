@@ -10,7 +10,7 @@
 body {
   margin: 0;
   padding: 0;
-  color: var(--dark-blue);
+  color: var(--white);
 }
 
 main {
@@ -19,4 +19,61 @@ main {
   background-color: var(--dark-blue);
   width: 100%;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: poppins-semibold;
+  font-size: 40px;
+  color: var(--white);
+  line-height: 1.5;
+}
+
+header nav {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: var(--dark-blue);
+  }
+
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+  }
+
+  header nav ul li a {
+    font-family: poppins-extralight;
+    font-size: 15px;
+    color: var(--dark-grey);
+    line-height: 1.5;
+    text-decoration: none;
+  }
+
+  header nav ul li a:hover {
+    color: var(--yellow);
+  }
+
+  header nav ul li a.active {
+    color: var(--yellow);
+  }
+
+  header nav ul li a.active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--yellow);
+  }
 }

@@ -7,6 +7,43 @@
   --dark-blue: #152040;
   --dark-grey: #080808;
 }
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav .myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  color: var(--yellow);
+}
 
 @font-face {
   font-family: poppins-semibold;
@@ -191,7 +228,7 @@ img {
 .contact-content p {
   font-size: 18px;
   color: var(--black);
-  text-align: center;
+  text-align: left;
   line-height: 1.5;
 }
 
@@ -202,13 +239,69 @@ img {
   align-items: center;
   padding: 50px;
   margin: 0;
+  color: var(--black);
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  padding: 50px;
+  min-width: 300px;
+  margin: 0;
 }
 
-.contact-form input {
+.contact-content p {
+  font-size: 18px;
+  color: var(--black);
+  line-height: 1.5;
+}
+.contact-info h4 {
+  font-size: 24px;
+  color: var(--black);
+  line-height: 1.5;
+}
+
+.burgerbar {
+  display: none;
+}
+
+.contact-form input,
+textarea {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid var(--black);
+}
+.form-btn {
+  background-color: var(--dark-blue);
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  cursor: pointer;
+  width: 129px;
+  height: 45px;
+  color: var(--white);
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  margin: 0;
+
+  background-color: var(--dark-blue);
+}
+footer p {
+  font-size: 18px;
+  color: var(--white);
+  text-align: center;
+  line-height: 1.5;
 }
 
 @media screen and (min-width: 768px) {
@@ -331,6 +424,11 @@ img {
     font-size: 18px;
   }
 
+  /* hover */
+  nav li a:hover {
+    color: var(--yellow);
+  }
+
   .contact-content {
     display: flex;
     flex-direction: row;
@@ -342,8 +440,8 @@ img {
   .contact-info {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     padding: 50px;
     min-width: 300px;
     margin: 0;
@@ -352,11 +450,62 @@ img {
   .contact-content p {
     font-size: 18px;
     color: var(--black);
-    text-align: center;
+    line-height: 1.5;
+  }
+  .contact-info h4 {
+    font-size: 24px;
+    color: var(--black);
     line-height: 1.5;
   }
 
-  .burgerbar {
+  .topnav {
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav .myLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+  }
+
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: flex;
+  }
+  /* hover */
+  .topnav a:hover {
+    color: var(--yellow);
+  }
+  .myLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+  }
+
+  /* Style the hamburger menu */
+  .topnav a.icon {
     display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .active {
+    color: var(--yellow);
+  }
+
+  /* logo on the left top */
+  .logo {
+    display: absolute;
+    left: 0;
+    top: 0;
   }
 }
