@@ -15,21 +15,30 @@
     <header>
       <div class="cover-img">
         <!-- Top Navigation Menu -->
-        <div class="topnav">
+        <div class="topnav" id="myTopnav">
           <a href="#home" class="active"></a>
           <!-- Navigation links (hidden by default) -->
           <div class="myLinks">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#dive_sites">Dive Sites</a>
-            <a href="#services">Services</a>
-            <a href="#faq">FAQ</a>
-            <!-- facebook logo -->
-            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
-            <!-- twitter logo -->
-            <a href="https://twitter.com/" class="fa fa-twitter"></a>
-            <!-- instagram logo -->
-            <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+            <a href="#home" class="active" onclick="closeMenu()">Home</a>
+            <a href="./about.html" onclick="closeMenu()">About</a>
+            <a href="#dive_sites" onclick="closeMenu()">Dive Sites</a>
+            <a href="#services" onclick="closeMenu()">Services</a>
+            <a href="#faq" onclick="closeMenu()">FAQ</a>
+            <a
+              href="https://www.facebook.com/"
+              class="fa fa-facebook"
+              onclick="closeMenu()"
+            ></a>
+            <a
+              href="https://twitter.com/"
+              class="fa fa-twitter"
+              onclick="closeMenu()"
+            ></a>
+            <a
+              href="https://www.instagram.com/"
+              class="fa fa-instagram"
+              onclick="closeMenu()"
+            ></a>
           </div>
           <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -209,4 +218,23 @@
       </p>
     </footer>
   </body>
+  <script>
+    // Add your JavaScript function here (if not already defined)
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+
+    // Add this function to close the menu when a link is clicked
+    function closeMenu() {
+      var x = document.getElementById("myTopnav");
+      if (x.className.includes("responsive")) {
+        x.className = "topnav";
+      }
+    }
+  </script>
 </html>

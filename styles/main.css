@@ -7,15 +7,40 @@
   --dark-blue: #152040;
   --dark-grey: #080808;
 }
+@font-face {
+  font-family: poppins-semibold;
+  src: url("../fonts/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: poppins-extralight;
+  src: url("../fonts/Poppins-ExtraLight.ttf");
+}
 /* Style the navigation menu */
 .topnav {
   overflow: hidden;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
 .topnav .myLinks {
   display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark-blue);
+  z-index: 1;
+  font-size: 25px;
+  text-align: center;
+  a {
+    font-size: 25px;
+  }
 }
 
 /* Style navigation menu links */
@@ -37,23 +62,37 @@
 
 /* Add a grey background color on mouse-over */
 .topnav a:hover {
-  color: black;
+  color: var(--yellow);
 }
 
 /* Style the active link (or home/logo) */
 .active {
   color: var(--yellow);
 }
-
-@font-face {
-  font-family: poppins-semibold;
-  src: url("../fonts/Poppins-SemiBold.ttf");
+.topnav.responsive {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-@font-face {
-  font-family: poppins-extralight;
-  src: url("../fonts/Poppins-ExtraLight.ttf");
+.topnav.responsive .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
 }
+.topnav.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+.topnav.responsive .myLinks {
+  display: block;
+}
+
 nav {
   display: none;
 }
@@ -469,6 +508,9 @@ footer p {
     flex-direction: row;
     justify-content: right;
     align-items: center;
+    background-color: transparent;
+    z-index: 0;
+    position: relative;
   }
 
   /* Style navigation menu links */
