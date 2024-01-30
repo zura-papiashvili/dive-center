@@ -17,6 +17,25 @@
   font-family: poppins-extralight;
   src: url("../fonts/Poppins-ExtraLight.ttf");
 }
+nav {
+  display: none;
+}
+.burgerbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  margin: 0;
+  gap: 10px;
+  align-self: end;
+}
+.burger {
+  width: 20px;
+  height: 2px;
+
+  background-color: var(--black);
+}
 
 p,
 button {
@@ -149,4 +168,195 @@ img {
   align-items: center;
   padding: 50px;
   margin: 0;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  margin: 0;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  margin: 0;
+}
+
+.contact-content p {
+  font-size: 18px;
+  color: var(--black);
+  text-align: center;
+  line-height: 1.5;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  margin: 0;
+}
+
+.contact-form input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) {
+  .cover-img {
+    background-image: url("https://static.wixstatic.com/media/fc7570_45d9b8902e024708b38cba80b28cabab~mv2_d_2848_3769_s_4_2.jpg/v1/fill/w_384,h_835,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/fc7570_45d9b8902e024708b38cba80b28cabab~mv2_d_2848_3769_s_4_2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plunge-into {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    align-items: left;
+  }
+
+  .about-us {
+    background: var(--lilac);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: 0;
+  }
+
+  .about-us p {
+    font-size: 18px;
+    color: var(--white);
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .courses {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-blue);
+    padding: 20px;
+    margin: 0;
+    gap: 20px;
+  }
+
+  .course-content {
+    background: var(--dark-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    /* padding-left: 20px; */
+    padding-bottom: 40px;
+    margin: 0;
+  }
+
+  .course-desc {
+    padding-left: 20px;
+    font-size: 18px;
+    color: var(--white);
+    text-align: left;
+    line-height: 1.5;
+  }
+
+  .course-content p {
+    font-size: 18px;
+    color: var(--white);
+    text-align: left;
+    line-height: 1.5;
+  }
+
+  img {
+    width: 100%;
+    margin: 0;
+  }
+
+  .feedback-carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: 0;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    padding: 0 50px;
+    height: 70px;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    list-style: none;
+  }
+
+  nav li {
+    display: inline-block;
+    padding: 0 20px;
+  }
+
+  nav li a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .contact-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: 0;
+  }
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    min-width: 300px;
+    margin: 0;
+  }
+
+  .contact-content p {
+    font-size: 18px;
+    color: var(--black);
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .burgerbar {
+    display: none;
+  }
 }
