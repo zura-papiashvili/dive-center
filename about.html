@@ -3,51 +3,111 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="./styles/about.css" />
+
     <title>About</title>
   </head>
+
   <body>
     <header>
-      <nav>
-        <ul>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="./about.html">About Us</a>
-          </li>
-          <li>
-            <a href="#">Courses</a>
-          </li>
-          <li>
-            <a href="#">Contact Us</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="cover-img">
+        <!-- Top Navigation Menu -->
+        <div class="topnav" id="myTopnav">
+          <div class="logoWeb">
+            <svg
+              preserveAspectRatio="xMidYMid meet"
+              data-bbox="0 0 90 52"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 90 52"
+              height="52"
+              width="90"
+              data-type="shape"
+              role="img"
+              aria-label="Homepage"
+              class="m-tanks"
+            >
+              <g>
+                <path
+                  d="M84.536 5.949C80.892 1.983 75.766 0 69.153 0c-3.55 0-6.795.869-9.734 2.608-2.939 1.74-5.358 3.952-7.255 6.638-1.715-2.93-4.01-5.203-6.889-6.822C42.397.808 39.091 0 35.357 0c-3.428 0-6.414.671-8.953 2.014-2.542 1.342-4.547 3.112-6.016 5.31V.363H0V52h20.388V25.408c0-3.47 2.248-6.408 5.367-7.468v-6.378c0-.603.49-1.093 1.096-1.093h2.49c.605 0 1.096.49 1.096 1.093v.258h3.995c.956 0 1.733 1.133 1.793 2.503v.06c0 .179 0 .357-.06.536v.06c-.179 1.132-.897 1.967-1.734 1.967h-3.994v.865c3.337.93 5.788 3.974 5.788 7.597V52h18.668V25.408c0-3.47 2.247-6.408 5.367-7.468v-6.378c0-.603.491-1.093 1.096-1.093h2.49c.605 0 1.096.49 1.096 1.093v.258h3.994c.957 0 1.734 1.133 1.794 2.503v.06c0 .179 0 .357-.06.536v.06c-.18 1.132-.897 1.967-1.734 1.967h-3.994v.865c3.336.93 5.788 3.974 5.788 7.597V52H90V22.063c0-6.774-1.822-12.145-5.464-16.114"
+                ></path>
+              </g>
+            </svg>
+            <h3>Moray Dive School</h3>
+          </div>
+          <div class="myLinks">
+            <a href="./index.html" onclick="closeMenu()">Home</a>
+            <a href="./about.html" class="active" onclick="closeMenu()"
+              >About</a
+            >
+            <a href="#dive_sites" onclick="closeMenu()">Dive Sites</a>
+            <a href="#services" onclick="closeMenu()">Services</a>
+            <a href="#faq" onclick="closeMenu()">FAQ</a>
+            <a
+              href="https://www.facebook.com/"
+              class="fa fa-facebook"
+              onclick="closeMenu()"
+            ></a>
+            <a
+              href="https://twitter.com/"
+              class="fa fa-twitter"
+              onclick="closeMenu()"
+            ></a>
+            <a
+              href="https://www.instagram.com/"
+              class="fa fa-instagram"
+              onclick="closeMenu()"
+            ></a>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
     </header>
+
     <main>
-      <h1>About Us</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-        voluptatum, quibusdam, quia, quae voluptate quod voluptatibus
-        exercitationem quos doloribus voluptas quas. Quisquam voluptatum,
-        quibusdam, quia, quae voluptate quod voluptatibus exercitationem quos
-        doloribus voluptas quas.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-        voluptatum, quibusdam, quia, quae voluptate quod voluptatibus
-        exercitationem quos doloribus voluptas quas. Quisquam voluptatum,
-        quibusdam, quia, quae voluptate quod voluptatibus exercitationem quos
-        doloribus voluptas quas.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-        voluptatum, quibusdam, quia, quae voluptate quod voluptatibus
-        exercitationem quos doloribus voluptas quas. Quisquam voluptatum,
-        quibusdam, quia, quae voluptate quod voluptatibus exercitationem quos
-        doloribus voluptas quas.
-      </p>
+      <div class="about">
+        <h1>About Us</h1>
+        <h2>The Ocean is Our Way of Life</h2>
+        <p>
+          I'm a paragraph. Click here to add your own text and edit me. It’s
+          easy. Just click “Edit Text” or double click me to add your own
+          content and make changes to the font. Feel free to drag and drop me
+          anywhere you like on your page. I’m a great place for you to tell a
+          story and let your users know a little more about you.
+        </p>
+        <p>
+          This is a great space to write long text about your company and your
+          services. You can use this space to go into a little more detail about
+          your company. Talk about your team and what services you provide. Tell
+          your visitors the story of how you came up with the idea for your
+          business and what makes you different from your competitors. Make your
+          company stand out and show your visitors who you are.
+        </p>
+        <p>
+          At Wix we’re passionate about making templates that allow you to build
+          fabulous websites and it’s all thanks to the support and feedback from
+          users like you! Keep up to date with New Releases and what’s Coming
+          Soon in Wix ellaneous in Support. Feel free to tell us what you think
+          and give us feedback in the Wix Forum. If you’d like to benefit from a
+          professional designer’s touch, head to the Wix Arena and connect with
+          one of our Wix Pro designers. Or if you need more help you can simply
+          type your questions into the Support Forum and get instant answers. To
+          keep up to date with everything Wix, including tips and things we
+          think are cool, just head to the Wix Blog!
+        </p>
+      </div>
     </main>
+    <footer>
+      <p>
+        © 2035 by Moray Dive School. Powered and secured by
+        <a href="https://www.wix.com/">Wix.com</a>
+      </p>
+    </footer>
   </body>
 </html>

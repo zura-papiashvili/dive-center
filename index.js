@@ -75,3 +75,20 @@ const courseContentElements = document.querySelectorAll(".course-content");
 courseContentElements.forEach((courseContentElement) => {
   observer.observe(courseContentElement);
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const header = document.querySelector("header");
+  const coverImg = document.querySelector(".cover-img");
+
+  // Function to handle scroll and adjust background position
+  function handleScroll() {
+    const scrollPosition = window.scrollY;
+    const newPosition = `${50 - scrollPosition * 0.1}%`; // Adjust the factor for the speed of the sliding effect
+
+    // Set the new background position
+    coverImg.style.backgroundPosition = `center ${newPosition}`;
+  }
+
+  // Add event listener for scroll
+  window.addEventListener("scroll", handleScroll);
+});
