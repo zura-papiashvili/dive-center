@@ -345,7 +345,7 @@ footer p {
 
 @media screen and (min-width: 768px) {
   .cover-img {
-    background-image: url("https://static.wixstatic.com/media/fc7570_45d9b8902e024708b38cba80b28cabab~mv2_d_2848_3769_s_4_2.jpg/v1/fill/w_384,h_835,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/fc7570_45d9b8902e024708b38cba80b28cabab~mv2_d_2848_3769_s_4_2.jpg");
+    background-image: url("https://static.wixstatic.com/media/fc7570_416a56430a9e4e2abd030cd2656120ef~mv2_d_6506_3420_s_4_2.jpg/v1/fill/w_980,h_1260,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/fc7570_416a56430a9e4e2abd030cd2656120ef~mv2_d_6506_3420_s_4_2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -406,6 +406,10 @@ footer p {
     /* padding-left: 20px; */
     padding-bottom: 40px;
     margin: 0;
+  }
+
+  .course-content img {
+    display: none;
   }
 
   .course-desc {
@@ -500,6 +504,8 @@ footer p {
   .topnav {
     overflow: hidden;
     position: relative;
+    display: flex;
+    flex-direction: row;
   }
 
   /* Hide the links inside the navigation menu (except for logo/home) */
@@ -540,14 +546,19 @@ footer p {
     top: 0;
   }
 
-  .active {
+  .myLinks .active {
     color: var(--yellow);
   }
 
   /* logo on the left top */
   .logo {
-    display: absolute;
-    left: 0;
-    top: 0;
+    display: none;
+  }
+  .logoWeb {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
   }
 }
