@@ -197,6 +197,7 @@ h3 {
   align-items: center;
   padding: 50px;
   margin: 0;
+  height: 800px;
 }
 
 .about-us p {
@@ -401,15 +402,26 @@ footer p {
     background: var(--dark-blue);
     display: flex;
     flex-direction: column;
-    justify-content: left;
+    justify-content: space-around;
     align-items: left;
     /* padding-left: 20px; */
     padding-bottom: 40px;
     margin: 0;
+    height: 400px;
+    opacity: 0; /* Initially set opacity to 0 */
+    transform: translateY(
+      20px
+    ); /* Initially set translateY for sliding-up effect */
+    transition: opacity 2s ease, transform 2s ease; /* Add transition for smoother animation */
   }
 
   .course-content img {
-    display: none;
+    display: block;
+  }
+
+  .course-content.visible {
+    opacity: 1; /* Set opacity to 1 when the element is visible */
+    transform: translateY(0); /* Reset translateY for sliding-up effect */
   }
 
   .course-desc {
